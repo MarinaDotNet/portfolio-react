@@ -11,49 +11,34 @@ import Skills from "./pages/Skills";
 import AboutMe from "./pages/Aboutme";
 import Contact from "./pages/Contact";
 
-import React, {useState, useEffect} from "react";
+import React from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
-export default function App(){
-  const path = window.location.pathname;
+export default function App() {
+  return (
+    <Router>
+      <DecorativeTopComponents />
 
-  const [page, setPage] = useState(() => {
-    const name = path.slice("/portfolio-react/".length, (path.length));
-    return name || "index";
-  });
-
-  useEffect(() => {
-    if(!page){
-      setPage("index");
-    }
-  }, [page]);
-
-  function renderPage(){
-    switch(page){
-      case "index":
-      case "home":  return <Home />;
-      case "projects": return <Projects />;
-      case "skills": return <Skills />;
-      case "aboutme": return <AboutMe />;
-      case "contact": return <Contact />;
-      default: return <Home />;
-    }
-  };
-
-  return(
-  <>
-    <DecorativeTopComponents />
-
-    <div className="page-layout">
-      <PageContentLeftSide />
-      <div className="main-content">
-        <NavBar page={page}/>
-        <DecorativeTopPageLine />
-        <div className="component-box">
-          {renderPage()}
-        </div> 
+      <div className="page-layout">
+        <PageContentLeftSide />
+        <div className="main-content">
+          <NavBar />
+          <DecorativeTopPageLine />
+          <div className="component-box">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/aboutme" element={<AboutMe />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<Home />} />
+            </Routes>
+          </div>
+        </div>
+        <PageContentRightSide />
       </div>
-      <PageContentRightSide />    
-    </div>
-    <DeveloperPowerShell />
-  </>);
+
+      <DeveloperPowerShell />
+    </Router>
+  );
 }

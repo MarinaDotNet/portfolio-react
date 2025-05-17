@@ -1,44 +1,28 @@
-export default function NavBar({page}){
+import { Link, useLocation } from "react-router-dom";
 
-    function navigateTo(path){
-        window.location.href = `/portfolio-react/${path}`;
-    };
+export default function NavBar() {
+  const { pathname } = useLocation();
+  const page = pathname === "/" ? "home" : pathname.replace("/", "");
 
-    return(
-        <div className="nav-bar">
-            <div id="nav-buttons">
-                <button id="index"
-                type="button"
-                className={page === "index" ? "active" : ""}
-                onClick={() => navigateTo("index")}>
-                    Home
-                </button>
-                <button id="projects"
-                type="button"
-                className={page === "projects" ? "active" : ""}
-                onClick={() => navigateTo("projects")}>
-                    Projects
-                </button>
-                <button id="skills"
-                type="button"
-                className={page === "skills" ? "active" : ""}
-                onClick={() => navigateTo("skills")}>
-                    Skills
-                </button>
-                <button id="aboutme"
-                type="button"
-                className={page === "aboutme" ? "active" : ""}
-                onClick={() => navigateTo("aboutme")}>
-                    About Me
-                </button>
-                <button id="contact"
-                type="button"
-                className={page === "contact" ? "active" : ""}
-                onClick={() => navigateTo("contact")}>
-                    Contact
-                </button>
-            </div>
-        </div>
-    );
-
+  return (
+    <div className="nav-bar">
+      <div id="nav-buttons">
+        <Link to="/">
+          <button className={page === "home" ? "active" : ""}>Home</button>
+        </Link>
+        <Link to="/projects">
+          <button className={page === "projects" ? "active" : ""}>Projects</button>
+        </Link>
+        <Link to="/skills">
+          <button className={page === "skills" ? "active" : ""}>Skills</button>
+        </Link>
+        <Link to="/aboutme">
+          <button className={page === "aboutme" ? "active" : ""}>About Me</button>
+        </Link>
+        <Link to="/contact">
+          <button className={page === "contact" ? "active" : ""}>Contact</button>
+        </Link>
+      </div>
+    </div>
+  );
 }
