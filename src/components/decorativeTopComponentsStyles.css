@@ -1,0 +1,137 @@
+.text-bold-sm {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-light-sm {
+  font-weight: lighter;
+  font-size: 0.7rem;
+}
+
+.text-accent-green{
+  color: var(--color-accent-green);
+}
+
+/* #region Visual Studio UI Simulation - Top Decorative Elements */
+
+.vs-toolbar-wrapper {
+  width: 100%;
+  height: 44px;
+  margin: 0 5px 10px 0;
+}
+
+.vs-toolbar-line {
+  display: flex;
+  align-items: center;
+  height: 22px;
+}
+
+.btn-muted {
+  background-color: var(--color-background);
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+
+.icon-button-row {
+  display: flex;
+  gap: 2px;
+}
+
+.divider-vertical {
+  height: 18px;
+  width: 1px;
+  margin: 0 2px;
+}
+
+.divider-double-dotted {
+  border-left: 0.5px dotted var(--color-text-muted);
+  border-right: 0.5px dotted var(--color-text-muted);
+}
+
+.divider-single-solid {
+  border-left: 0.5px solid var(--color-text-muted);
+}
+
+.btn-icon {
+  height: 18px;
+  background-color: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.btn-icon-round {
+  border-radius: 10px;
+  border: 2px solid var(--color-text-muted);
+  display: flex;
+  align-items: flex-end;
+}
+
+.btn-icon-round.active {
+  border: 2px solid var(--color-accent-cyan);
+  color: var(--color-accent-cyan);
+}
+
+.btn-icon-dashed {
+  border-radius: 3px;
+  border: 2px dashed var(--color-text-muted);
+  font-size: 0.7rem;
+  width: 18px;
+}
+
+.btn-icon-solid {
+  border: 1px solid var(--color-background);
+}
+
+.btn-icon-double {
+  width: 25px;
+  height: 18px;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-background);
+  font-weight: bold;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  padding: 0;
+}
+
+.btn-text-light {
+  background-color: var(--color-button-bg);
+  border: 1px solid var(--color-button-bg);
+  font-weight: lighter;
+  font-size: 0.7rem;
+}
+
+.btn-text-muted {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-background);
+  font-weight: lighter;
+  font-size: 0.7rem;
+  margin-left: 8px;
+}
+
+.btn-abc-check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-background);
+}
+
+.btn-abc-label {
+  font-weight: bold;
+  font-size: 0.4rem;
+  color: var(--color-text-muted);
+}
+
+.checkmark-icon {
+  margin-top: -4px;
+}
+/* #endregion Visual Studio UI Simulation */
