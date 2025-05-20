@@ -1,0 +1,100 @@
+:root{
+     /* Inline SVG icon used for accordion list bullets */
+    --icon-accordion-list-item: url("data:image/svg+xml,%3Csvg%20width%3D%2211%22%20height%3D%2213%22%20viewBox%3D%220%200%2011%2013%22%20fill%3D%22none%22%20xmlns%3D%22http://www.w3.org/2000/svg%22%3E%3Crect%20x%3D%220.25%22%20y%3D%220.539955%22%20width%3D%2210.3355%22%20height%3D%222.20888%22%20fill%3D%22%230F0F2E%22%20stroke%3D%22%23D9D9D9%22%20stroke-width%3D%220.5%22/%3E%3Crect%20x%3D%220.25%22%20y%3D%229.56956%22%20width%3D%2210.3355%22%20height%3D%222.20888%22%20fill%3D%22%230F0F2E%22%20stroke%3D%22%23D9D9D9%22%20stroke-width%3D%220.5%22/%3E%3Crect%20x%3D%220.25%22%20y%3D%225.05476%22%20width%3D%2210.3355%22%20height%3D%222.20888%22%20fill%3D%22%230F0F2E%22%20stroke%3D%22%23D9D9D9%22%20stroke-width%3D%220.5%22/%3E%3C/svg%3E");
+}
+
+/* Left Panel */
+.panel-sidebar-left{
+  grid-row: span 2 / span 2;
+  border: 2px solid var(--color-border);
+  margin: 0 5px 0 0;
+}
+
+/* Header for items in the sidebar panel */
+.server-object-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2px;
+}
+
+/* Responsive small title text */
+.text-title-sm {
+  font-size: clamp(0.5rem, 1vw + 0.1rem, 1rem);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Flexible divider that grows to fill available space */
+.divider-expandable {
+  flex-grow: 1;
+  min-width: 10px;
+}
+
+/* Container for control buttons (non-shrinking) */
+.server-object-controls {
+  display: flex;
+  flex-shrink: 0;
+}
+
+/* Icon-style button with minimal styling */
+button.btn-icon-server{
+    border: 1px solid var(--color-background);
+    background-color: var(--color-background);
+    padding: 0;
+    margin: 0 1px;
+    cursor: pointer;
+}
+
+/* Main container for accordion */
+.accordion-container{
+  border: 1px solid var(--color-background);
+  overflow: hidden;
+  
+}
+
+/* Accordion header button */
+.accordion-header-btn {
+  width: 100%;
+  text-align: left;
+  background-color: var(--color-background);
+  border: none;
+  
+  font-size: clamp(0.3rem, 1vw + 0.1rem, 0.7rem);
+  white-space: nowrap;
+  flex-shrink: 0;
+
+  gap: 0.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: left;
+  color: var(--color-text-primary);
+}
+
+/* Content panel shown when accordion is open */
+.accordion-panel{
+  padding: 0.1rem;
+  background-color: var(--color-background);
+}
+
+/* Wrapper for icon and title in accordion header */
+.accordion-icon-group{
+    display: flex; 
+    align-items: center; 
+    gap: 0.2rem;
+}
+
+/* List inside accordion panel with custom icon */
+.accordion-list{
+    padding: 0;
+    margin: 0 1.3rem;
+    font-size: clamp(0.3rem, 1vw + 0.1rem, 0.7rem);
+    list-style-image:  var(--icon-accordion-list-item);
+}
+
+/* Ensure custom list icon is properly displayed */
+.accordion-list li::before{
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
