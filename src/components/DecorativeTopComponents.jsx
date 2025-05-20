@@ -36,23 +36,23 @@ export default function DecorativeTopComponents(){
                 
             </div>
             <div className="vs-toolbar-line">
-                <div class="icon-button-row">
+                <div className="icon-button-row">
                     <div className="divider-vertical divider-double-dotted"></div>
                     {/*Round button Backward*/}
-                    <button class="btn-icon btn-icon-round active" title="Backward">←</button>
+                    <button className="btn-icon btn-icon-round active" title="Backward">←</button>
                     {/*Round button Forward*/}
-                    <button class="btn-icon btn-icon-round text-muted" title="Forward">→</button>
+                    <button className="btn-icon btn-icon-round text-muted" title="Forward">→</button>
                     <div className="divider-vertical divider-single-solid"></div>
                     {/*Button to add new Project*/}
-                    <button class="btn-icon btn-icon-dashed text-muted" title="New Project"> ＋ </button>
+                    <button className="btn-icon btn-icon-dashed text-muted" title="New Project"> ＋ </button>
                     {/*Button to open file*/}
-                    <button class="btn-icon btn-icon-solid" title="Open File">
+                    <button className="btn-icon btn-icon-solid" title="Open File">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-yellow)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z" />
                         </svg>
                     </button>
                     {/*Button to save file*/}
-                    <button class="btn-icon btn-icon-solid" title="Save">
+                    <button className="btn-icon btn-icon-solid" title="Save">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-cyan)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
                             <polyline points="17 21 17 13 7 13 7 21"/>
@@ -60,7 +60,7 @@ export default function DecorativeTopComponents(){
                         </svg>                
                     </button>
                     {/*Button to save all*/}
-                    <button class="btn-icon-double" title="Save All">
+                    <button className="btn-icon-double" title="Save All">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-cyan)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
                             <polyline points="17 21 17 13 7 13 7 21"/>
@@ -95,8 +95,8 @@ export default function DecorativeTopComponents(){
 
                     {/*Button to find in files */}
                     <div className="divider-vertical divider-single-solid"></div>
-                    <button class="btn-icon-double text-muted" title="Find in Files (Ctrl + Shift + F">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 32 32" fill="none" stroke="var(--color-accent-yellow)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <button className="btn-icon-double text-muted" title="Find in Files (Ctrl + Shift + F">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 32 32" fill="none" stroke="var(--color-accent-yellow)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M3 9a2 2 0 0 1 2-2h8l2 2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z" />
                             <circle cx="20" cy="10" r="4" />
                             <line x1="22.5" y1="12.5" x2="25" y2="15" />
@@ -104,8 +104,8 @@ export default function DecorativeTopComponents(){
                     </button>
                     <div className="divider-vertical divider-single-solid"></div>
                     {/*Button start window */}
-                    <button class="btn-icon-double" title="Start Window">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 32 32" fill="none" stroke="var(--color-accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <button className="btn-icon-double" title="Start Window">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 32 32" fill="none" stroke="var(--color-accent-cyan)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <rect x="4" y="6" width="24" height="18" rx="2" ry="2"/>
                             <line x1="4" y1="12" x2="28" y2="12"/>
                             <circle cx="8" cy="9" r="1"/>
@@ -117,13 +117,12 @@ export default function DecorativeTopComponents(){
                     <div className="divider-vertical divider-double-dotted"></div>
                     {/*Button to toggle spell checker */}
                     <button className="btn-abc-check" title="Toggle Spell Checker">
-                        <span class="btn-abc-label">abc</span>
-                        <svg class="checkmark-icon" viewBox="0 0 16 16" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 8L7 12L13 4" stroke="var(--color-accent-green)" stroke-width="1" fill="none" />
+                        <span className="btn-abc-label">abc</span>
+                        <svg className="checkmark-icon" viewBox="0 0 16 16" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 8L7 12L13 4" stroke="var(--color-accent-green)" strokeWidth="1" fill="none" />
                         </svg>
                     </button>
                     <div className="divider-vertical divider-single-solid"></div>
-                    
                 </div>
             </div>
         </div>
