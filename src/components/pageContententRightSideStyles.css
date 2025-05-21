@@ -1,0 +1,95 @@
+/* Sidebar panel aligned to the right */
+.panel-sidebar-right{
+  grid-row: span 2 / span 2;
+  border: 2px solid var(--color-border);
+  margin: 0 5px;
+}
+
+/* Header section for the properties window */
+.properties-windows-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2px;
+}
+
+/* Container for control buttons (non-shrinking) */
+.properties-windows-controls{
+    display: flex;
+    flex-shrink: 0;
+}
+
+/* Icon-style button with minimal styling */
+button.btn-icon-properties{
+    border: 1px solid var(--color-background);
+    background-color: var(--color-background);
+    padding: 0;
+    margin: 0 1px;
+    cursor: pointer;
+}
+
+/* Accordion header button */
+.v2-accordion-header-btn{
+  width: 100%;
+  text-align: left;
+  background-color: var(--color-frame);
+  border: none;
+  
+  font-size: clamp(0.3rem, 1vw + 0.1rem, 0.7rem);
+  white-space: nowrap;
+  flex-shrink: 0;
+
+  gap: 0.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: var(--color-text-primary);
+
+  height: 20px;
+}
+
+/* Main container for accordion */
+.v2-accordion-container{
+  border: 1px solid var(--color-background);
+  overflow: hidden;
+}
+
+/* Content panel shown when accordion is open */
+.v2-accordion-panel{
+  padding: 0.1rem;
+  background-color: var(--color-background);
+
+  border-left: 12px solid var(--color-frame);
+  border-right: 12px solid var(--color-frame);
+}
+
+/* List inside the accordion panel */
+.v2-accordion-list{
+  padding: 0;
+  margin: 0 1px 0;
+  font-size: clamp(0.3rem, 1vw + 0.1rem, 0.7rem);
+  list-style: none;
+}
+
+/* Custom bullet icon for list items */
+.v2-accordion-list li::before{
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+/* Accordion link text styling */
+.v2-accordion-list li a{
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+/* Horizontal rule style */
+.line{
+  border: none;
+  height: 0.5px;
+  background-color: var(--color-frame);
+  margin:0;
+}
+
