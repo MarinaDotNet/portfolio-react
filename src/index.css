@@ -60,6 +60,7 @@ body{
 
   width: calc(100% - 8px);
   margin: 8px;
+  overflow: hidden;
 }
 
 /* === Text Utilities === */
@@ -163,13 +164,13 @@ body{
 
 /* #region Scrollbar */
 /* === Scrollbar Styling === */
-.component-box::-webkit-scrollbar{
+::-webkit-scrollbar{
   width: 10px;
 }
-.component-box::-webkit-scrollbar-track{
+::-webkit-scrollbar-track{
   background: var(--color-frame);
 }
-.component-box::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb{
   background: var(--color-border);
   border-radius: 6px;
 }
