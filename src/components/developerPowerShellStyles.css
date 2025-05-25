@@ -21,20 +21,6 @@ body.light-theme{
     white-space: pre-wrap;
 }
 
-/* #region Scrollbar */
-/* === Scrollbar Styling === */
-.console-window::-webkit-scrollbar{
-  width: 10px;
-}
-.console-window::-webkit-scrollbar-track{
-  background: var(--color-frame);
-}
-.console-window::-webkit-scrollbar-thumb{
-  background: var(--color-border);
-  border-radius: 6px;
-}
-/* #endregion Scrollbar */
-
 /* Input Field in Console Form */
 .console-input{
     background: transparent;
