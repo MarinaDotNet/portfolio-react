@@ -17,28 +17,30 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 export default function App() {
   return (
     <Router>
-      <DecorativeTopComponents />
-
       <div className="page-layout">
-        <PageContentLeftSide />
+        <DecorativeTopComponents />
+
         <div className="main-content">
-          <NavBar />
-          <DecorativeTopPageLine />
-          <div className="component-box">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/skills" element={<Skills />} />
-              <Route path="/aboutme" element={<AboutMe />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<Home />} />
-            </Routes>
+          <PageContentLeftSide />
+          <div className="middle-content">
+            <NavBar />
+            <DecorativeTopPageLine />
+            <div className="component-box">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/skills" element={<Skills />} />
+                <Route path="/aboutme" element={<AboutMe />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="*" element={<Home />} />
+              </Routes>
+            </div>
           </div>
+          <PageContentRightSide />
         </div>
-        <PageContentRightSide />
+        <DeveloperPowerShell />
       </div>
 
-      <DeveloperPowerShell />
     </Router>
   );
 }

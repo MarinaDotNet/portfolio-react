@@ -58,8 +58,10 @@ body{
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(2, 1fr);
 
-  width: calc(100% - 8px);
-  margin: 8px;
+  width: 100vh;
+  height: 100vw;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -74,7 +76,6 @@ body{
   height: fit-content; 
   padding: 0.5rem;
   border-top: 2px solid var(--color-highlight-primary);
-  margin: 2px 2px 0 2px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -104,26 +105,19 @@ body{
 
 /* === Page Content Wrapper === */
 .page-layout{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  gap: 1vw;
 }
 
 /* === Main Content Area === */
 .main-content{
-  grid-row: span 2 / span 2;
-  grid-column: span 3 / span 3;
-  padding-top: 10px;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  align-content: center;
-}
-
-/* === Right Panel === */
-.sidebar-right{
-  grid-row: span 2 / span 2;
-  border: 2px solid var(--color-border);
-  margin: 0 5px;
+  display: flex;
+  flex-direction: row;
+  height: 53vh;
+  width: 100vw;
 }
 
 /* #region Navigation Bar Styles */
@@ -138,7 +132,7 @@ body{
 #nav-buttons button{
   background-color: var(--color-nav-btn-inactive);
   border: none;
-  margin: 0 2px;
+  margin: 0 2px 0 0;
 
   color: var(--color-text-primary);
 
@@ -156,9 +150,7 @@ body{
 .component-box{
   border-left: 10px solid var(--color-frame);
   border-bottom: 10px solid var(--color-frame);
-  margin: 0 2px 2px;
-
-  height: 40vh;
+  
   overflow-y: scroll;
 }
 
@@ -179,8 +171,13 @@ body{
 /* === Footer simulates Visual Studion Developer PowerShell === */
 .footer{
   border: 2px solid var(--color-frame);
-  margin-top: 5px;
-  margin-right: 5px;
+}
+
+.middle-content{
+  display: flex;
+  flex-direction: column;
+  width: 58vw;
+  height: 53vh;
 }
 
 

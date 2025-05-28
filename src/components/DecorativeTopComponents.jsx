@@ -8,7 +8,7 @@ export default function DecorativeTopComponents(){
             <div className=""></div>
 
             <div className="vs-toolbar-line">
-                <span className="bold-small decorative-bright-text">MS</span>
+                <span className="text-bold-sm">MS</span>
                 <button type="button" className="btn-muted">File</button>
                 <button type="button" className="btn-muted">Edit</button>
                 <button type="button" className="btn-muted">View</button>
@@ -27,7 +27,7 @@ export default function DecorativeTopComponents(){
                 style={{marginLeft: "5px"}}
                 >Search ▾</button>
 
-                <span className="bold-small decorative-bright-text">MarinaDotNet.Portfolio</span>
+                <span className="text-bold-sm">MarinaDotNet.Portfolio</span>
 
                 <button 
                 type="button" 
@@ -117,9 +117,11 @@ export default function DecorativeTopComponents(){
                     <div className="divider-vertical divider-double-dotted"></div>
                     {/*Button to toggle spell checker */}
                     <button className="btn-abc-check" title="Toggle Spell Checker">
-                        <span className="btn-abc-label">abc</span>
-                        <svg className="checkmark-icon" viewBox="0 0 16 16" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 8L7 12L13 4" stroke="var(--color-accent-green)" strokeWidth="1" fill="none" />
+                        <svg viewBox="0 0 16 16" width="100%" height="2.5vh" xmlns="http://www.w3.org/2000/svg">
+                            <text x="8" y="5" textAnchor="middle" dominantBaseline="middle" fontFamily="Segoe UI, sans-serif" fontSize="8" fill="var(--color-text-muted)">
+                                abc
+                            </text>
+                            <path d="M3 10L7 14L13 6" stroke="var(--color-accent-green)" strokeWidth="2" fill="none"/>
                         </svg>
                     </button>
                     <div className="divider-vertical divider-single-solid"></div>

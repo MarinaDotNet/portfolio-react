@@ -1,11 +1,13 @@
 /* Sidebar panel aligned to the right */
 .panel-sidebar-right{
-  grid-row: span 2 / span 2;
+  display: flex;
+  flex-direction: column;
+
+  width: 20vw;
   border: 2px solid var(--color-border);
-  margin: 0 5px;
-  max-height: 60vh;
   overflow-y: auto;
   overflow-x: hidden;
+  margin: 0 0 0 1vw;
 }
 
 /* Header section for the properties window */

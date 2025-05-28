@@ -1,15 +1,10 @@
 .text-bold-sm {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: clamp(0.5rem, 1vw + 0.1rem, 1rem);
 }
 
 .text-muted {
   color: var(--color-text-muted);
-}
-
-.text-light-sm {
-  font-weight: lighter;
-  font-size: 0.7rem;
 }
 
 .text-accent-green{
@@ -19,59 +14,83 @@
 /* #region Visual Studio UI Simulation - Top Decorative Elements */
 
 .vs-toolbar-wrapper {
-  width: 100%;
-  height: 44px;
-  margin: 0 5px 10px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 5vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .vs-toolbar-line {
   display: flex;
   align-items: center;
-  height: 22px;
+  height: 2.5vh;
+}
+
+.vs-toolbar-line button {
+  height: 2.5vh;
+  padding: 0 0.5vw; 
+  line-height: 2.5vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(10px, 1.2vh, 20px);
+  cursor: pointer;
+}
+
+.icon-button-row {
+  display: flex;
+  gap: 0 2px;
+  height: 2.5vh;
+}
+
+.divider-vertical {
+  height: 2.5vh;
+  width: 1px;
+  margin: 0 2px;
+}
+
+.divider-double-dotted {
+  border-left: 1px dotted var(--color-text-muted);
+  border-right: 1px dotted var(--color-text-muted);
+}
+
+.divider-single-solid {
+  border-left: 1px solid var(--color-text-muted);
+}
+
+/* #region Buttons styles */
+.btn-icon,
+.btn-icon-double {
+  background-color: var(--color-background);
+}
+
+.btn-icon svg{
+  height: 2.5vh;
+  width: auto;
+}
+
+.btn-icon-double {
+  border: 1px solid var(--color-background);
+  font-weight: bold;
+  gap: 0;
+}
+
+.btn-icon-double svg{
+  height: 2.3vh;
+  width: auto;
 }
 
 .btn-muted {
   background-color: var(--color-background);
   border: none;
   color: var(--color-text-muted);
-  font-size: 0.7rem;
   font-weight: lighter;
-}
-
-.icon-button-row {
-  display: flex;
-  gap: 2px;
-}
-
-.divider-vertical {
-  height: 18px;
-  width: 1px;
-  margin: 0 2px;
-}
-
-.divider-double-dotted {
-  border-left: 0.5px dotted var(--color-text-muted);
-  border-right: 0.5px dotted var(--color-text-muted);
-}
-
-.divider-single-solid {
-  border-left: 0.5px solid var(--color-text-muted);
-}
-
-.btn-icon {
-  height: 18px;
-  background-color: var(--color-background);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
 }
 
 .btn-icon-round {
   border-radius: 10px;
   border: 2px solid var(--color-text-muted);
-  display: flex;
-  align-items: flex-end;
 }
 
 .btn-icon-round.active {
@@ -82,56 +101,40 @@
 .btn-icon-dashed {
   border-radius: 3px;
   border: 2px dashed var(--color-text-muted);
-  font-size: 0.7rem;
-  width: 18px;
+  font-size: clamp(0.4rem, 0.8vw + 0.1rem, 0.9rem);
+  width: clamp(1.8vw, 1vw + 0.1vw, 3.6vw);
 }
 
 .btn-icon-solid {
   border: 1px solid var(--color-background);
 }
 
-.btn-icon-double {
-  width: 25px;
-  height: 18px;
-  background-color: var(--color-background);
-  border: 1px solid var(--color-background);
-  font-weight: bold;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  padding: 0;
-}
-
 .btn-text-light {
   background-color: var(--color-button-bg);
   border: 1px solid var(--color-button-bg);
   font-weight: lighter;
-  font-size: 0.7rem;
+  font-size: clamp(0.4rem, 0.8vw + 0.1rem, 0.9rem);
 }
 
 .btn-text-muted {
   background-color: var(--color-background);
   border: 1px solid var(--color-background);
   font-weight: lighter;
-  font-size: 0.7rem;
+  font-size: clamp(0.4rem, 0.8vw + 0.1rem, 0.9rem);
   margin-left: 8px;
 }
 
 .btn-abc-check {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--color-background);
-  border: 1px solid var(--color-background);
+  border: none;
+  background-color: var(--color-bg-button);
+  cursor: pointer;
 }
+/* #endregion Buttons styles */
 
-.btn-abc-label {
-  font-weight: bold;
-  font-size: 0.4rem;
-  color: var(--color-text-muted);
-}
-
-.checkmark-icon {
-  margin-top: -4px;
-}
 /* #endregion Visual Studio UI Simulation */
+
+
+
+
+
+

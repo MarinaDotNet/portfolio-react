@@ -5,10 +5,18 @@
 
 /* Left Panel */
 .panel-sidebar-left{
-  grid-row: span 2 / span 2;
+  /*grid-row: span 2 / span 2;
   border: 2px solid var(--color-border);
   margin: 0 5px 0 0;
   max-height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;*/
+
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  border: 2px solid var(--color-border);
+  margin: 0 1vw 0 0;
   overflow-y: auto;
   overflow-x: hidden;
 }
