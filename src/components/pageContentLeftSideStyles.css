@@ -38,9 +38,45 @@
 
 /* Flexible divider that grows to fill available space */
 .divider-expandable {
-  flex-grow: 1;
-  min-width: 10px;
+  width: 100%;
+  height: 2vh;
+
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      var(--color-text-muted),
+      var(--color-text-muted) 0.2vw,
+      transparent 0.2vw,
+      transparent 0.4vw
+    ),
+    repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 0.2vw,
+      var(--color-text-muted) 0.2vw,
+      var(--color-text-muted) 0.4vw
+    ),
+    repeating-linear-gradient(
+      to right,
+      var(--color-text-muted),
+      var(--color-text-muted) 0.2vw,
+      transparent 0.2vw,
+      transparent 0.4vw
+    );
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    
+    background-position:
+    0 0.7vh,     /* top line */
+    0 1.1vh,     /* middle line */
+    0 1.5vh;     /* bottom line */
+
+    display:flex;
+
 }
+
+
+
 
 /* Container for control buttons (non-shrinking) */
 .server-object-controls {

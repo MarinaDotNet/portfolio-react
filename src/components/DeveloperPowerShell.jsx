@@ -102,12 +102,6 @@ export default function DeveloperPowerShell(){
         <div className="developer-powershell-header">
                 <span className="text-title-sm">Developer Powershell</span>
                 <div className="divider-expandable">
-                    {/* Decorative dashed lines */}
-                    <svg viewBox="0 0 54 7" preserveAspectRatio="none" width="100%" height="7" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="0.75" x2="54" y2="0.75" stroke="var(--color-text-primary)" strokeWidth="0.5" strokeDasharray="2 2" />
-                        <line y1="3.75" x2="54" y2="3.75" stroke="var(--color-text-primary)" strokeWidth="0.5" strokeDasharray="2 2" />
-                        <line y1="6.75" x2="54" y2="6.75" stroke="var(--color-text-primary)" strokeWidth="0.5" strokeDasharray="2 2" />
-                    </svg>
                 {/* divider-expandable div end*/}
                 </div>
                 <div className="properties-windows-controls">
