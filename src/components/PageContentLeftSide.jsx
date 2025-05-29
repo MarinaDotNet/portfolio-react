@@ -82,7 +82,7 @@ export default function PageContentLeftSide(){
                 </div>
             {/* server-object-header div end*/}
             </div>
-            <div className="middle-content">
+            <div>
                 {/* SQL server Accordion start */}
                 <Accordion title={
                     <span className="accordion-icon-group">
