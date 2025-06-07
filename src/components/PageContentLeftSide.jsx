@@ -53,22 +53,22 @@ export default function PageContentLeftSide(){
                 {/* divider-expandable div end*/}
                 </div>
                 <div className="server-object-controls">
-                    <button className="btn-icon-server">
+                    <button className="btn-icon-server icon-server">
                         {/* down arrow */}
-                        <svg width="8" height="5.5" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.91713 8.55482L0.42433 0.174181H11.4099L5.91713 8.55482Z" fill="var(--color-text-primary)" />
                         </svg>
                     </button>
-                    <button className="btn-icon-server">
+                    <button className="btn-icon-server icon-server">
                         {/* square and line */}
-                        <svg width="10.5" height="4" viewBox="0 0 17 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg viewBox="0 0 17 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="6.9834" y="0.174164" width="9.06077" height="5.5871" fill="var(--color-text-primary)" />
                         <line x1="6.9834" y1="3.46773" x2="0.187819" y2="3.46773" stroke="var(--color-text-primary)" />
                         </svg>
                     </button>
-                    <button className="btn-icon-server">
+                    <button className="btn-icon-server icon-server">
                         {/* X icon */}
-                        <svg width="9.5" height="7.5" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line y1="-0.5" x2="15.4324" y2="-0.5" transform="matrix(0.689722 -0.724074 0.804166 0.594405 1.91307 12.5548)" stroke="var(--color-text-primary)" />
                         <line y1="-0.5" x2="15.7742" y2="-0.5" transform="matrix(0.804166 0.594405 -0.689722 0.724074 0.972366 2.37035)" stroke="var(--color-text-primary)" />
                         </svg>
