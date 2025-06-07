@@ -156,19 +156,32 @@ body{
 
 /* #region Scrollbar */
 /* === Scrollbar Styling === */
-::-webkit-scrollbar{
+
+/* === WebKit Scrollbar Styling (Chrome, Safari, Edge) === */
+::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: var(--color-frame);
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: var(--color-border);
   border-radius: 6px;
 }
-::-webkit-scrollbar-corner{
+::-webkit-scrollbar-corner {
   background-color: var(--color-frame);
+}
+
+/* === Firefox Scrollbar Styling === */
+@-moz-document url-prefix() {
+  * {
+  scrollbar-width: thin; 
+  scrollbar-color: var(--color-border) var(--color-frame);
+}
+  .component-box{
+  border-right: 10px solid var(--color-frame);
+  }
 }
 /* #endregion Scrollbar */
 
@@ -183,9 +196,6 @@ body{
   width: 58vw;
   height: 53vh;
 }
-
-
-
 
 
 
