@@ -1,63 +1,76 @@
+import {NumberedCodeBloc, CodeKeyWords, CodeValues, ClassName, Tab, Comment} from "../components/CodeTokens.jsx";
+
 export default function AboutMe(){
-    return (
-        <div className="text-code">
-            <span className="text-code-rows">1</span><span className="text-code-keywords">using</span> Creativity;<br/>
-            <span className="text-code-rows">2</span><span className="text-code-keywords">using</span> Knowledges;<br/>
-            <span className="text-code-rows">3</span><span className="text-code-keywords">using</span> Etc.*;<br/>
 
-            <span className="text-code-rows">4</span><span className="text-code-keywords">namespace</span> React-Portfolio.AboutMe;<br/>
-
-            <p className="text-comment">
-                <span className="text-code-rows">5</span>/// &lt;summary&gt; <br/>
-                <span className="text-code-rows">6</span>/// Hello, I'm Marina Sichova <br/>
-                <span className="text-code-rows">7</span>/// Junior Software Developer.<br/>
-                <span className="text-code-rows">8</span>/// &lt;/summary&gt;
-            </p>
-
-            <span className="text-code-rows">9</span><span className="text-code-keywords">public class </span><span className="text-code-class">AboutMe</span> : <span className="text-code-value">JuniorDeveloper</span><br/>
-            <span className="text-code-rows">10</span>&#123;<br/>
-
-            <span className="text-code-rows">11</span>&nbsp;&nbsp;<span className="text-code-keywords">public string</span> Personality =&gt; <br/> 
-            <span className="text-code-rows">12</span>&nbsp;&nbsp;[<br/>
-            <p className="reverse-hanging-indent"><span className="text-code-rows">13</span>&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-code-value">"A person with a strong focus on creating robust and innovative software solutions."</span>,</p>
-            <p className="reverse-hanging-indent"><span className="text-code-rows">14</span>&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-code-value">"Who have a strong passion into coding and finding effective development solutions."</span></p>
-            <span className="text-code-rows">15</span>&nbsp;&nbsp;];<br/>
-                
-            <br/>
-                
-            <span className="text-code-rows">16</span>&nbsp;&nbsp;<span className="text-code-keywords">public string</span>[] ProgrammingAndScriptingLanguages =&gt; <br/>
-            <span className="text-code-rows">17</span>&nbsp;&nbsp;[<br/>
-            <p className="reverse-hanging-indent"><span className="text-code-rows">18</span>&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-code-value">"C#"</span>, <span className="text-code-value">"SQL"</span>,  <span className="text-code-value">"JavaScript"</span>, <span className="text-code-value">"PHP"</span>, <span className="text-code-value">"Java"</span>, <span className="text-code-value">"Python"</span></p>
-            <span className="text-code-rows">19</span>&nbsp;&nbsp;];<br/>
-
-            <br/>
-
-            <span className="text-code-rows">20</span>&nbsp;&nbsp;<span className="text-code-keywords">public string</span>[] Technologies =&gt; <br/>
-            <span className="text-code-rows">21</span>&nbsp;&nbsp;[<br/>
-            <p className="reverse-hanging-indent"><span className="text-code-rows">22</span>&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-code-value">"NoSQL"</span>, <span className="text-code-value">"HTML5/CSS"</span>, <span className="text-code-value">"SVG"</span></p>
-            <span className="text-code-rows">23</span>&nbsp;&nbsp;];<br/>
-            
-            <br/>
-
-            <span className="text-code-rows">24</span>&nbsp;&nbsp;<span className="text-code-keywords">public string</span>[] Learning =&gt; <br/>
-            <span className="text-code-rows">25</span>&nbsp;&nbsp;[<br/>
-            <p className="reverse-hanging-indent"><span className="text-code-rows">26</span>&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-code-value">"React"</span>, <span className="text-code-value">"Azure"</span>, <span className="text-code-value">"Unit Testing"</span></p>
-            <span className="text-code-rows">27</span>&nbsp;&nbsp;]; <br />
-
-            <br/>
-
-            <span className="text-code-rows">28</span>&nbsp;&nbsp;<span className="text-code-keywords">public string</span>[] Interests =&gt; <br/>
-            <span className="text-code-rows">29</span>&nbsp;&nbsp;[ <br/>
-            <p className="reverse-hanging-indent"><span className="text-code-rows">30</span>&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-code-value">"I specialize in RESTful APIs, desktop and web applications, and web services using the .NET framework and ASP.NET Core MVC."</span></p>
-            <span className="text-code-rows">31</span>&nbsp;&nbsp;]; <br />
-            <br/>
-
-            <p className="reverse-hanging-indent"><span className="text-code-rows">32</span>&nbsp;&nbsp;<span className="text-code-keywords">public</span> <span className="text-code-class">Uri</span> DownloadMyResume =&gt; <span className="text-code-keywords">new</span>(<span className="text-code-value">"</span><a className="text-code-keywords" href="https://marinadotnet.github.io/portfolio-react">https://marinadotnet.github.io/portfolio-react</a><span className="text-code-value">"</span>);</p>
-            <br/>
-
-            <p className="reverse-hanging-indent"><span className="text-code-rows">33</span>&nbsp;&nbsp;<span className="text-code-keywords">public</span> <span className="text-code-class">Uri</span> MyStaticPortfolio =&gt; <span className="text-code-keywords">new</span>(<span className="text-code-value">"</span><a className="text-code-keywords" href="https://marinadotnet.github.io">https://marinadotnet.github.io</a><span className="text-code-value">"</span>);</p>
-
-            <span className="text-code-rows">34</span>&#125; 
-        </div>
-    );
+    return <NumberedCodeBloc children = {[
+        <><CodeKeyWords>using</CodeKeyWords> Creativity;</>,
+        <><CodeKeyWords>using</CodeKeyWords> Knowledges;</>,
+        <><CodeKeyWords>using</CodeKeyWords> Etc.*;</>,
+        
+        <><CodeKeyWords>namespace</CodeKeyWords> React-Portfolio.AboutMe;</>,
+        <br/>,
+        <Comment>&lt;summary&gt;</Comment>,
+        <Comment>Hi, I'm Marina Sichova - .NET Developer passionate</Comment>,
+        <Comment>about building robust & innovative software solutions.</Comment>,
+        <Comment>&lt;/summary&gt;</Comment>,
+        <br/>,
+        <><CodeKeyWords>public class</CodeKeyWords> <ClassName>AboutMe</ClassName> : <CodeValues>JuniorDeveloper</CodeValues></>,
+        <>&#123;</>,
+        <br/>,
+        <><Tab number={2}/><CodeKeyWords>public string</CodeKeyWords> Personality =&gt;</>,
+        <><Tab number={2}/>[</>,
+        <><Tab number={4}/><CodeValues>"A person with a strong focus on creating robust and innovative software solutions."</CodeValues>,</>,
+        <><Tab number={4}/><CodeValues>"I have a strong passion into coding and finding effective development solutions."</CodeValues></>,
+        <><Tab number={2}/>];</>,
+        <br/>,
+        <><Tab number={2}/><CodeKeyWords>public string</CodeKeyWords>[] ProgrammingAndScriptingLanguages =&gt;</>,
+        <><Tab number={2}/>[</>,
+        <><Tab number={4}/>
+            <CodeValues>"C#"</CodeValues>, 
+            <CodeValues>"SQL"</CodeValues>, 
+            <CodeValues>"JavaScript"</CodeValues>, 
+            <CodeValues>"PHP"</CodeValues>, 
+            <CodeValues>"Java"</CodeValues>, 
+            <CodeValues>"Python"</CodeValues>
+        </>,
+        <><Tab number={2}/>];</>,
+        <br/>,
+        <><Tab number={2}/><CodeKeyWords>public string</CodeKeyWords>[] Technologies =&gt;</>,
+        <><Tab number={2}/>[</>,
+        <><Tab number={4}/>
+            <CodeValues>"NoSQL"</CodeValues>,  
+            <CodeValues>"HTML5/CSS"</CodeValues>, 
+            <CodeValues>"SVG"</CodeValues>
+        </>,
+        <><Tab number={2}/>];</>,
+        <br/>,
+        <><Tab number={2}/><CodeKeyWords>public string</CodeKeyWords>[] CurrentlyLearning =&gt;</>,
+        <><Tab number={2}/>[</>,
+        <><Tab number={4}/>
+            <CodeValues>"React"</CodeValues>, 
+            <CodeValues>"Azure"</CodeValues>,    
+            <CodeValues>"Unit Testing"</CodeValues>
+        </>,
+        <><Tab number={2}/>];</>,
+        <br/>,
+        <><Tab number={2}/><CodeKeyWords>public string</CodeKeyWords>[] FocusAreas =&gt;</>,
+        <><Tab number={2}/>[</>,
+        <><Tab number={4}/><CodeValues>"I specialize in RESTful APIs, desktop and web applications, and web services using the .NET framework and ASP.NET Core MVC."</CodeValues></>,
+        <><Tab number={2}/>];</>,
+        <br/>,
+        <><Tab number={2}/><CodeKeyWords>public</CodeKeyWords> <ClassName>Uri</ClassName> DownloadMyResume =&gt; <CodeKeyWords>new</CodeKeyWords>(<CodeValues>"<a href="https://marinadotnet.github.io/portfolio-react">https://marinadotnet.github.io/portfolio-react</a>"</CodeValues>);</>,
+        <br/>,
+        <><Tab number={2}/><CodeKeyWords>public</CodeKeyWords> <ClassName>Uri</ClassName> MyStaticPortfolio =&gt; <CodeKeyWords>new</CodeKeyWords>(<CodeValues>"<a href="https://marinadotnet.github.io">https://marinadotnet.github.io</a>"</CodeValues>);</>,
+        <br/>,
+        <><Tab number={2}/><CodeKeyWords>public</CodeKeyWords> <ClassName>Uri</ClassName>[] Contact =&gt;</>,
+        <br/>,
+        <><Tab number={2}/>[</>,
+        <><Tab number={4}/><CodeKeyWords>new</CodeKeyWords>(<CodeValues>"<a href="mailto:msichova@outlook.com">about:Email</a>"</CodeValues>),</>,
+        <><Tab number={4}/><CodeKeyWords>new</CodeKeyWords>(<CodeValues>"<a href="https://github.com/MarinaDotNet">about:GitHub</a>"</CodeValues>),</>,
+        <><Tab number={4}/><CodeKeyWords>new</CodeKeyWords>(<CodeValues>"<a href="https://www.linkedin.com/in/marina-sichova-333599281?originalSubdomain=au">about:LinkedIn</a>"</CodeValues>),</>,
+        <><Tab number={4}/><CodeKeyWords>new</CodeKeyWords>(<CodeValues>"<a href="https://wa.me/+61433881789">about:WhatsApp</a>"</CodeValues>),</>,
+        <><Tab number={2}/>];</>,
+        <br/>,
+        <>&#125;</>
+    ]} />;
 }

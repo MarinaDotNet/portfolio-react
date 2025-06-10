@@ -97,7 +97,8 @@ body{
 .text-code-class{
   color: var(--color-text-code-class);
 }
-.text-code-value{
+.text-code-value,
+.text-code-value a{
   color: var(--color-text-code-value);
 }
 
