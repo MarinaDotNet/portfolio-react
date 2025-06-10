@@ -160,7 +160,7 @@ body{
 .main-content{
   display: flex;
   flex-direction: row;
-  height: 53vh;
+  height: 60vh;
   width: 100vw;
 }
 
@@ -238,7 +238,7 @@ body{
   display: flex;
   flex-direction: column;
   width: 58vw;
-  height: 53vh;
+  height: 60vh;
 }
 
 
