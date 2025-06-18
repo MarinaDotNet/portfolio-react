@@ -56,6 +56,12 @@ body.light-theme{
   --color-button-bg: rgba(178, 178, 230, 0.9);
 }
 
+/* Page Scroll behaviour*/
+html{
+  scroll-padding-top: 25vh;
+  scroll-behavior: smooth;
+}
+
 /* === Base Body Layout === */
 body{
   background-color: var(--color-background);
@@ -76,7 +82,9 @@ body{
 }
 
 /* === Text Utilities === */
-.text-primary{
+.text-primary,
+a.primary-text,
+a.primary-text::after{
   color: var(--color-text-primary);
 }
 .text-code{
@@ -241,6 +249,8 @@ body{
   width: 58vw;
   height: 60vh;
 }
+
+
 
 
 
