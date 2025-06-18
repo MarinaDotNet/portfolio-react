@@ -7,7 +7,7 @@ export default function AboutMe(){
         <><CodeKeyWords>using</CodeKeyWords> Knowledges;</>,
         <><CodeKeyWords>using</CodeKeyWords> Etc.*;</>,
         
-        <><CodeKeyWords>namespace</CodeKeyWords> React-Portfolio.AboutMe;</>,
+        <><CodeKeyWords>namespace</CodeKeyWords> MarinaDotNet;</>,
         <br/>,
         <Comment>&lt;summary&gt;</Comment>,
         <Comment>Hi, I'm Marina Sichova - .NET Developer passionate</Comment>,
