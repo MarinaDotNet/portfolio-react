@@ -89,6 +89,21 @@ function Comment({children}){
         <span className="text-comment">/// {children}</span>
         </>
     );
-}
+};
 
-export {NumberedCodeBloc, CodeKeyWords, CodeValues, ClassName, Tab, Comment};
+/**
+ * Displays code-style single line comments in a styled format.
+ * 
+ * @param {object} props
+ * @param {React.ReactNode} props.children - The comment conntent.
+ * @returns {JSX.Element}
+ */
+function SingleComment({children}){
+    return(
+        <>
+        <span className="text-comment">// {children}</span>
+        </>
+    );
+};
+
+export {NumberedCodeBloc, CodeKeyWords, CodeValues, ClassName, Tab, Comment, SingleComment};
