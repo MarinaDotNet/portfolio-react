@@ -23,7 +23,8 @@ export default function MobileLayout(){
             }}>
                 <p>
                     The mobile version of this site is not yet available. <br />
-                    For the best experience, please visit using a PC, laptop, or tablet with a screen width over <strong>610px</strong>.
+                    For the best experience, please visit using a PC, laptop, or tablet with a screen width over <strong>610px</strong> <br/>
+                    and screen height over <strong>500px</strong>.
                 </p>
                 <p>
                     Currently, the Opera browser is not supported. <br />
