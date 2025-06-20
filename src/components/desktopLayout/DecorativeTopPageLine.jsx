@@ -1,6 +1,6 @@
-import DarkThemeIcon from "./DarkThemeIcon";
-import LightThemeIcon from "./LightThemeIcon";
-import { ThemeContext } from "./ThemeContext";
+import DarkThemeIcon from "../DarkThemeIcon";
+import LightThemeIcon from "../LightThemeIcon";
+import { ThemeContext } from "../ThemeContext";
 import { useContext } from "react";
 
 export default function DecorativeTopPageLine(){

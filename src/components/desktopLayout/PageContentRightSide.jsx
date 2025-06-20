@@ -1,5 +1,5 @@
 import "./pageContententRightSideStyles.css";
-import "../index.css";
+
 import "./pageContentLeftSideStyles.css";
 
 import React, {useState} from "react";

@@ -1,5 +1,5 @@
 import "./decorativeTopComponentsStyles.css";
-import "../index.css";
+
 
 export default function DecorativeTopComponents(){
     return(

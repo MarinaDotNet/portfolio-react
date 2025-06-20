@@ -6,7 +6,7 @@ import {ThemeContext} from "./ThemeContext";
 // Importing necessary React hooks and modules
 import "./developerPowerShellStyles.css";
 import "../index.css";
-import "./pageContententRightSideStyles.css";
+import "./desktopLayout/pageContententRightSideStyles.css";
 
 export default function DeveloperPowerShell(){
     // Default boot message lines displayed in the PowerShell
