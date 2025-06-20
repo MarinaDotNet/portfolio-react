@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-export default function UseMediaQuerity(breakPoint = 601){
-    const query = `(max-width: ${breakPoint}px)`;
+export default function UseMediaQuerity(breakPointWidth = 601, breakPointHeigth = 500){
+    const query = `(max-width: ${breakPointWidth}px), (max-height: ${breakPointHeigth}px)`;
 
     const [isMobile, setIsMobile] = useState(() => 
     typeof window !== 'undefined'

@@ -4,7 +4,7 @@ import UseMediaQuery from "./components/UseMediaQuery.jsx";
 
 export default function App() {
 
-  const isMobile = UseMediaQuery(601);
+  const isMobile = UseMediaQuery(601, 500);
 
   return (
     <>
