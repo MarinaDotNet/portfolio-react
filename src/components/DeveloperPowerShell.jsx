@@ -43,27 +43,37 @@ export default function DeveloperPowerShell(){
             case "help":
                 response = <span>Available commands:  
                     {/* List available commands*/}
-                    <span className="cmd"> home</span>, 
-                    <span className="cmd"> projects</span>, 
-                    <span className="cmd"> skills</span>, 
-                    <span className="cmd"> about-me</span>,
-                    <span className="cmd"> contact</span>, 
+                    <span className="cmd"> /home.cs</span>, 
+                    <span className="cmd"> /projects.cs</span>, 
+                    <span className="cmd"> /skills.cs</span>, 
+                    <span className="cmd"> /about_me.cs</span>,
+                    <span className="cmd"> /contact.cs</span>, 
                     <span className="cmd"> switch-theme</span>, 
                     <span className="cmd"> clear</span> or <span className="cmd">cls</span></span>;
                 break;
-            case "home":
+            case "/home.cs":
+            case "home": 
+            case "home.cs":
                 navigate("/home");
                 break;
-            case "projects":
+            case "/projects.cs":
+            case "projects": 
+            case "projects.cs":
                 navigate("/projects");
                 break;
-            case "skills":
+            case "/skills.cs": 
+            case "skills": 
+            case "skills.cs":
                 navigate("/skills");
                 break;
-            case "about-me":
+            case "/about_me.cs": 
+            case "about_me": 
+            case "about_me.cs":
                 navigate("/aboutme");
                 break;
-            case "contact":
+            case "/contact.cs": 
+            case "contact": 
+            case "contact.cs":
                 navigate("/contact");
                 break;
             case "switch-theme":
