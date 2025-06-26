@@ -197,6 +197,11 @@ a.primary-text::after{
   background-color: var(--color-nav-btn-active);
   border-top: 2px solid var(--color-highlight-primary);
 }
+
+.hamburger-icon{
+  display: none;
+}
+
 /* #endregion Navigation Bar Styles */
 
 /* === Page Component Box === */
@@ -250,8 +255,98 @@ a.primary-text::after{
   height: 60vh;
 }
 
+/* #region Mobile Layouts */
+
+.decorative-top-mobile{
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: var(--color-frame);
+}
+
+.side-bar{
+  width: 10vw;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--color-border);
+}
+
+.page-content{
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 600px), screen and (max-height: 500px){
+
+  .page-layout{
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .color-theme-icon{
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  .nav-bar{
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    margin-left: 2px;
+  }
+  .hamburger-icon {
+    display: flex;
+    height: 5vh;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .navigate-buttons.responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    width: max-content;
+    background-color: var(--color-nav-btn-inactive);
+    z-index: 10;
+  }
+  .responsive-nav-button button.active{
+    display: flex;
+    height: 5vh;
+  }
+  .responsive-nav-button button:not(.active){
+    display: none;
+  }
+  .navigate-buttons.responsive .responsive-nav-button button:not(.active){
+    display: flex;
+  }
+  .navigate-buttons.responsive .responsive-nav-button button{
+    width: 100%;
+  }
 
 
+  .component-box{
+    border: 2px solid var(--color-border);
+    overflow: scroll;
+    width: 90vw;
+    height: 60vh;
+  }
+
+  .footer{
+    width: 90vw;
+    height: 30vh;
+    max-height: 40vh;
+  }
+}
+/* #endregion Mobile Layouts */
 
 
 

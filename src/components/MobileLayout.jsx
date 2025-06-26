@@ -1,37 +1,40 @@
 
+import {HashRouter as Router, Routes, Route} from "react-router-dom";
+import DecorativeTopComponents from "./mobileLayout/DecorativeTopComponents";
+import SideBar from "./mobileLayout/SideBar";
+import NavBar from "./NavBar";
+
+import Home from "../pages/Home";
+import Projects from "../pages/Projects";
+import AboutMe from "../pages/Aboutme";
+import Contact from "../pages/Contact";
+import Skills from "../pages/Skills";
+import DeveloperPowerShell from "./DeveloperPowerShell";
+
 export default function MobileLayout(){
     return(
-        <>
-        <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            minHeight: '100vh',
-            padding: '1rem',
-            boxSizing: 'border-box'
-        }}>
-            <div style={{
-                maxWidth: '100vw',
-                width: '100%',
-                border: '1px solid #ffeeba',
-                borderRadius: '12px',
-                padding: '1.5rem',
-                textAlign: 'center',
-                fontFamily: 'sans-serif',
-                fontSize: '1rem',
-                lineHeight: '1.5'
-            }}>
-                <p>
-                    The mobile version of this site is not yet available. <br />
-                    For the best experience, please visit using a PC, laptop, or tablet with a screen width over <strong>610px</strong> <br/>
-                    and screen height over <strong>500px</strong>.
-                </p>
-                <p>
-                    Currently, the Opera browser is not supported. <br />
-                    Mobile and Opera support are coming soon!
-                </p>
+        <Router>
+            <div className="page-layout">
+                <DecorativeTopComponents />
+                <div className="page-content">
+                    <SideBar />
+                    <div className="">
+                        <NavBar />
+                        <div className="component-box">
+                            <Routes>
+                                <Route path="/" element={<Home />} />
+                                <Route path="/projects" element={<Projects />} />
+                                <Route path="/skills" element={<Skills />} />
+                                <Route path="/aboutme" element={<AboutMe />} />
+                                <Route path="/contact" element={<Contact />} />
+                                <Route path="*" element={<Home />} />
+                            </Routes>
+                        </div>
+                        <DeveloperPowerShell />
+                    </div>
+                </div>
+                
             </div>
-        </div>
-        </>
+        </Router>
     );
 }
