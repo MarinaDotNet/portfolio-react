@@ -265,15 +265,15 @@ a.primary-text::after{
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-color: var(--color-frame);
+  background-color: var(--color-button-bg);
+  border-bottom: solid 1px var(--color-frame);
 }
 
 .side-bar{
   width: 10vw;
   display: flex;
   justify-content: center;
-
-  background-color: var(--color-border);
+ background-color: var(--color-button-bg);
 }
 
 .page-content{
