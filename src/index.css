@@ -270,7 +270,6 @@ a.primary-text::after{
 
 .side-bar{
   width: 10vw;
-  height: 95vh;
   display: flex;
   justify-content: center;
 
@@ -343,7 +342,6 @@ a.primary-text::after{
 
   .footer{
     width: 90vw;
-    height: 30vh;
     max-height: 40vh;
   }
 }
