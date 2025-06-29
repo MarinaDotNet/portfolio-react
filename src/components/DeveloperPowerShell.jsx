@@ -41,42 +41,48 @@ export default function DeveloperPowerShell(){
 
         switch(cmd.toLowerCase()){
             case "help":
-                response = <span>Available commands:  
+                response = <span>Available commands:<br/>
                     {/* List available commands*/}
-                    <span className="cmd"> /home.cs</span>, 
-                    <span className="cmd"> /projects.cs</span>, 
-                    <span className="cmd"> /skills.cs</span>, 
-                    <span className="cmd"> /about_me.cs</span>,
-                    <span className="cmd"> /contact.cs</span>, 
-                    <span className="cmd"> switch-theme</span>, 
-                    <span className="cmd"> clear</span> or <span className="cmd">cls</span></span>;
+                    press <span className="cmd"> /home.cs</span> or <span className="cmd">home</span> or <span className="cmd">h</span> to go to home page,<br/> 
+                    press <span className="cmd"> /projects.cs</span> or <span className="cmd">projects</span> or <span className="cmd">p</span> to go to to projects page,<br/> 
+                    press <span className="cmd"> /skills.cs</span> or <span className="cmd">skills</span> or <span className="cmd">s</span> to go to to skills page,<br/> 
+                    press <span className="cmd"> /about_me.cs</span> or <span className="cmd">about_me</span> or <span className="cmd">a</span> to go to to about_me page,<br/>
+                    press <span className="cmd"> /contact.cs</span> or <span className="cmd">contact</span> or <span className="cmd">c</span> to go to to contact page,<br/> 
+                    press <span className="cmd"> switch-theme</span> or <span className="cmd">theme</span> or <span className="cmd">th</span> to switch color theme,<br/> 
+                    press <span className="cmd"> clear</span> or <span className="cmd">cls</span> to clear the console</span>;
                 break;
             case "/home.cs":
             case "home": 
             case "home.cs":
+            case "h":
                 navigate("/home");
                 break;
             case "/projects.cs":
             case "projects": 
             case "projects.cs":
+            case "p":
                 navigate("/projects");
                 break;
             case "/skills.cs": 
             case "skills": 
             case "skills.cs":
+            case "s":
                 navigate("/skills");
                 break;
             case "/about_me.cs": 
             case "about_me": 
             case "about_me.cs":
+            case "a":
                 navigate("/aboutme");
                 break;
             case "/contact.cs": 
             case "contact": 
             case "contact.cs":
+            case "c":
                 navigate("/contact");
                 break;
             case "switch-theme":
+            case "th":
                 toggleTheme();
                 break;
             case "clear":
