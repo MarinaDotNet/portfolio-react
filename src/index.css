@@ -288,6 +288,9 @@ a.primary-text::after{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    width: 100%;
+    height: 100%;
   }
 
   .color-theme-icon{
@@ -301,9 +304,16 @@ a.primary-text::after{
     height: 5vh;
     margin-left: 2px;
   }
+
+
+  .responsive-nav-button button.active{
+    font-size: clamp(0.65rem, 0.7vw + 0.15rem, 0.875rem);
+    height: 5vh;
+    line-height: 1vh;
+  }
+
   .hamburger-icon {
     display: flex;
-    height: 5vh;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -332,6 +342,10 @@ a.primary-text::after{
     width: 100%;
   }
 
+  #nav-buttons button{
+    font-size: clamp(0.65rem, 0.7vw + 0.15rem, 0.875rem);
+    line-height: 1vh;
+}
 
   .component-box{
     border: 2px solid var(--color-border);
@@ -344,7 +358,12 @@ a.primary-text::after{
     width: 90vw;
     max-height: 40vh;
   }
+
+  .text-primary{
+    font-size: clamp(0.65rem, 0.7vw + 0.15rem, 0.875rem);
+  }
 }
+
 /* #endregion Mobile Layouts */
 
 

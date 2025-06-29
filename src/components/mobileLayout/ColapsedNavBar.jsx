@@ -9,7 +9,7 @@ export default function ColapsedNavBar(){
     };
     return(
         <button title="icon-hamburger" className="hamburger-icon" onClick={collapsedNavBar}> 
-            <svg height="30" width="30" id="hamburger" viewBox="5 5 30 30">
+            <svg height="5vh" width="5vw" id="hamburger" viewBox="5 5 30 30">
             <line
             id="hamburgerLine1"
             stroke="var(--color-highlight-primary)"  
