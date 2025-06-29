@@ -16,13 +16,17 @@ body.light-theme{
 
 /* Console Window Styling */
 .console-window{
-    font-size: clamp(0.5rem, 1vw + 0.1rem, 1rem);
+    font-size: clamp(0.75rem, 0.9vw + 0.2rem, 1rem);
     background-color: transparent;
     font-family: 'Courier New', monospace;
     padding: 0.2rem;
     max-height: 20vh;
     overflow-y: auto;
     white-space: pre-wrap;
+}
+.console-window-header{
+    font-size: clamp(0.65rem, 0.7vw + 0.15rem, 0.875rem);
+    white-space: nowrap;
 }
 
 /* Input Field in Console Form */
@@ -32,12 +36,14 @@ body.light-theme{
     color: var(--color-text-primary);
     outline: none;
     flex: 1;
+    font-size: clamp(0.875rem, 1vw + 0.25rem, 1.125rem);
 }
 
 /* Prefix Symbol (e.g., > or $) Before Input */
 .console-prefics{
     margin: 0 0.2rem;
     color: var(--color-text-secondary);
+    white-space: nowrap;
 }
 
 /* Container for Input Row */
@@ -49,6 +55,7 @@ body.light-theme{
 /* Individual Console Output Line */
 .console-line{
     margin: 0 0.2rem;
+    white-space: nowrap;
 }
 
 /* Styling for Command Text in Output */
@@ -74,7 +81,7 @@ body.light-theme{
   align-items: center;
   gap: 0.5rem;
   margin-left: 2px;
-  font-size: clamp(1rem, 1vw + 0.1rem, 1.5rem);
+  font-size: clamp(0.75rem, 0.9vw + 0.2rem, 1rem);
   font-family: 'Courier New', monospace;
   font-weight: bolder;
 }
@@ -85,7 +92,7 @@ body.light-theme{
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    font-size: clamp(0.5rem, 1vw + 0.1rem, 1rem);
+    font-size: clamp(0.65rem, 0.7vw + 0.15rem, 0.875rem);
     font-family: 'Courier New', monospace;
     font-weight: bolder;
     gap: 0.2rem;

@@ -11,10 +11,10 @@ import "./desktopLayout/pageContententRightSideStyles.css";
 export default function DeveloperPowerShell(){
     // Default boot message lines displayed in the PowerShell
     const defaultLines = [
-        "******************************************************************",
+        "**********************************************",
         "MarinaDotNet Developer 2025 Portfolio v2.1",
         "** Copyright © 2025 Marina Sichova",
-        "******************************************************************",
+        "**********************************************",
         <span>Type '<span className="cmd">help</span>' for commands.</span>];
 
      // State for console lines and user input
@@ -110,7 +110,7 @@ export default function DeveloperPowerShell(){
     <div className="footer">
         {/* PowerShell header with title and window control icons */}
         <div className="developer-powershell-header">
-                <span className="text-title-sm">Developer Powershell</span>
+                <span className="console-window-header">Developer Powershell</span>
                 <div className="divider-expandable">
                 {/* divider-expandable div end*/}
                 </div>
@@ -178,7 +178,7 @@ export default function DeveloperPowerShell(){
             ))}
 
             <form onSubmit={handleSubmit} className="console-input-form" name="consoleForm">
-                <span name="consolePrefics" className="console-prefics">{"PS www.marinadotnet.github.io/react-portfolio>"}</span>
+                <span name="consolePrefics" className="console-prefics">{"PS MarinaDotNet.github.io>"}</span>
                 <input
                 name="consoleInput"
                 className="console-input"
