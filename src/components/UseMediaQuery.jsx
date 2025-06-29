@@ -31,9 +31,5 @@ export default function UseMediaQuerity(breakPointWidth = 601, breakPointHeigth 
         console.log('matchMedia:', query, '→', isMobile);
     }, [isMobile, query]);
 
-    if(navigator.userAgent.includes('OPR/') || navigator.userAgent.includes('Opera')){
-        return true;
-    }
-
     return isMobile;
 }
