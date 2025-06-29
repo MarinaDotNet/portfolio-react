@@ -34,8 +34,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(10px, 1.2vh, 20px);
+  /*font-size: clamp(10px, 1.2vh, 20px);*/
   cursor: pointer;
+}
+
+@media screen and (max-width: 750px){
+  .vs-toolbar-line button{
+    font-size: clamp(10px, 1vh, 20px);
+  }
 }
 
 .icon-button-row {
