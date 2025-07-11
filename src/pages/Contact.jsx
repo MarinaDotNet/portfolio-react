@@ -3,10 +3,11 @@ import {NumberedCodeBloc, CodeKeyWords, CodeValues, ClassName, Tab, SingleCommen
 export default function Contact (){
     return (
         <NumberedCodeBloc children={[
-            <><CodeKeyWords>using</CodeKeyWords> Communication.*;</>,
+            <><CodeKeyWords>using</CodeKeyWords> Human.Interaction;</>,
             <><CodeKeyWords>using</CodeKeyWords> GitHub.Connections;</>,
-            <><CodeKeyWords>using</CodeKeyWords> Trust.Authenticity;</>,
-            <><CodeKeyWords>using</CodeKeyWords> Empathy.InboxZero;</>,
+            <><CodeKeyWords>using</CodeKeyWords> Async.Communication;</>,
+            <><CodeKeyWords>using</CodeKeyWords> OpenPorts._443;</>,
+            <><CodeKeyWords>using</CodeKeyWords> Networking.Protocols;</>,
             <br/>,
             <><CodeKeyWords>namespace</CodeKeyWords> MarinaDotNet;</>,
             <br />,
@@ -28,11 +29,11 @@ export default function Contact (){
             <br/>,
             <><Tab number={2} /><ClassName>Console</ClassName>.WriteLine(<CodeValues>"Static Portfolio : <a href="https://marinadotnet.github.io">MarinaDotNet"</a></CodeValues>);</>,
             <br/>,
-            <><Tab number={2} /><ClassName>Console</ClassName>.WriteLine(<CodeValues>"React-Vite Portfolio : <a href="https://marinadotnet.github.io/portfolio-react/">MarinaDotNet/porfolio-react"</a></CodeValues>);</>,
+            <><Tab number={2} /><ClassName>Console</ClassName>.WriteLine(<CodeValues>"React-Vite Portfolio : <a href="https://marinadotnet.github.io/portfolio-react/">MarinaDotNet/portfolio-react"</a></CodeValues>);</>,
             <br />,
             <><Tab number={2} /><ClassName>Console</ClassName>.WriteLine(<CodeValues>"--------------------------"</CodeValues>);</>,
             <br/>,
-            <><Tab number={2} /><SingleComment>Feel free to reach out for collaborations, questions, or jsut to say hi.</SingleComment></>,
+            <><Tab number={2} /><SingleComment>Feel free to reach out for collaborations, questions, or just to say hi.</SingleComment></>,
             <><Tab number={1} />&#125;</>,
             <>&#125;</>
 
