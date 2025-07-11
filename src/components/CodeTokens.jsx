@@ -9,13 +9,23 @@ import {Children} from "react";
  * @returns {JSX.Element}
  */
 function NumberedCodeBloc({children}){
-    return (
+    const childrenArray = Children.toArray(children);
+
+    let lineNumber = 0;
+
+    return(
         <div className="text-code reverse-hanging-indent">
-            {Children.toArray(children).map((child, index) => (
-                typeof child.type === 'string' && child.type === 'br'
-                ? <br key={index} />
-                : <div key={index}><span className="text-code-rows">{index + 1}</span> {child} </div>
-            ))}
+            {childrenArray.map((child, index) => {
+                if(typeof child.type === 'string' && child.type === 'br'){
+                    return <br key={index} />;
+                }
+
+                return(
+                    <div key={index}>
+                        <span className="text-code-rows">{++lineNumber}</span>{child}
+                    </div>
+                );
+            })}
         </div>
     );
 };
