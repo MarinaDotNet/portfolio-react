@@ -88,6 +88,11 @@ a.primary-text,
 a.primary-text::after{
   color: var(--color-text-primary);
 }
+a.in-active-link{
+  pointer-events: none;
+  cursor:not-allowed;
+  text-decoration: none;
+}
 .text-code{
   font-size: clamp(0.875rem, 1vw + 0.25rem, 1.125rem);
   font-family: 'Courier New', monospace;
