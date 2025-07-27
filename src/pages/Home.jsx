@@ -38,7 +38,7 @@ export default function Home(){
             <><Tab number={6} />Passion = <CodeValues> "Building robust, maintainable web and desktop apps with .NET and exploring front-end with React"</CodeValues>,</>,
             <br />,
             <><Tab number={6} />Certifications = [
-                <CodeValues>"Information Technology (Advanced...)"</CodeValues>,
+                <CodeValues>"Information Technology (Advanced Programming)"</CodeValues>,
                 <CodeValues>"Diploma of Business"</CodeValues>],
             </>,
             <br />,
@@ -60,7 +60,7 @@ export default function Home(){
                 <br />
                 &#123;
                 <br/>
-                <Tab number={1} />Company = <CodeValues>"Data Annotation Tech"</CodeValues>,
+                <Tab number={1} />Company = <CodeValues><a href="https://www.dataannotation.tech/" title="Visit dataannotation.tech">"Data Annotation Tech"</a></CodeValues>,
                 <br/>
                 <Tab number={1} />Role = <CodeValues>"Web Developer"</CodeValues>,
                 <br/>
