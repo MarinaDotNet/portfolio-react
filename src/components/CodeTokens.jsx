@@ -22,7 +22,9 @@ function NumberedCodeBloc({children}){
 
                 return(
                     <div key={index}>
-                        <span className="text-code-rows">{++lineNumber}</span>{child}
+                        <span className="text-code-rows">
+                            {(++lineNumber).toString().padStart(2, '0')}
+                        </span>{child}
                     </div>
                 );
             })}
