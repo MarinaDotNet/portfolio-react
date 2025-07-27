@@ -44,10 +44,10 @@ export default function DeveloperPowerShell(){
                 response = <span>Available commands:<br/>
                     {/* List available commands*/}
                     press <span className="cmd"> /home.cs</span> or <span className="cmd">home</span> or <span className="cmd">h</span> to go to home page,<br/> 
-                    press <span className="cmd"> /projects.cs</span> or <span className="cmd">projects</span> or <span className="cmd">p</span> to go to to projects page,<br/> 
-                    press <span className="cmd"> /skills.cs</span> or <span className="cmd">skills</span> or <span className="cmd">s</span> to go to to skills page,<br/> 
-                    press <span className="cmd"> /about_me.cs</span> or <span className="cmd">about_me</span> or <span className="cmd">a</span> to go to to about_me page,<br/>
-                    press <span className="cmd"> /contact.cs</span> or <span className="cmd">contact</span> or <span className="cmd">c</span> to go to to contact page,<br/> 
+                    press <span className="cmd"> /projects.cs</span> or <span className="cmd">projects</span> or <span className="cmd">p</span> to go to projects page,<br/> 
+                    press <span className="cmd"> /skills.cs</span> or <span className="cmd">skills</span> or <span className="cmd">s</span> to go to skills page,<br/> 
+                    press <span className="cmd"> /about_me.cs</span> or <span className="cmd">about_me</span> or <span className="cmd">a</span> to go to about_me page,<br/>
+                    press <span className="cmd"> /contact.cs</span> or <span className="cmd">contact</span> or <span className="cmd">c</span> to go to contact page,<br/> 
                     press <span className="cmd"> switch-theme</span> or <span className="cmd">theme</span> or <span className="cmd">th</span> to switch color theme,<br/> 
                     press <span className="cmd"> clear</span> or <span className="cmd">cls</span> to clear the console</span>;
                 break;
