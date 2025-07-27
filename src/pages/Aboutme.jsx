@@ -58,7 +58,7 @@ export default function AboutMe(){
         <><Tab number={4}/><CodeValues>"I specialize in building RESTful APIs, desktop and web applications, and web services using the .NET framework and ASP.NET Core MVC."</CodeValues></>,
         <><Tab number={2}/>];</>,
         <br/>,
-        <><Tab number={2}/><CodeKeyWords>public</CodeKeyWords> <ClassName>Uri</ClassName> DownloadMyResume =&gt; <CodeKeyWords>new</CodeKeyWords>(<CodeValues>"<a href="https://marinadotnet.github.io/portfolio-react">https://marinadotnet.github.io/portfolio-react</a>"</CodeValues>);</>,
+        <><Tab number={2}/><CodeKeyWords>public</CodeKeyWords> <ClassName>Uri</ClassName> DownloadMyResume =&gt; <CodeKeyWords>new</CodeKeyWords>(<CodeValues>"<a href="https://marinadotnet.github.io/portfolio-react" className="in-active-link">https://marinadotnet.github.io/portfolio-react</a>"</CodeValues>);</>,
         <br/>,
         <><Tab number={2}/><CodeKeyWords>public</CodeKeyWords> <ClassName>Uri</ClassName> MyStaticPortfolio =&gt; <CodeKeyWords>new</CodeKeyWords>(<CodeValues>"<a href="https://marinadotnet.github.io">https://marinadotnet.github.io</a>"</CodeValues>);</>,
         <br/>,
