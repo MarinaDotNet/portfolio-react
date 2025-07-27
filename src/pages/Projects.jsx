@@ -10,7 +10,6 @@ export default function Projects(){
                 <><CodeKeyWords>using</CodeKeyWords> Projects.Backend;</>,
                 <><CodeKeyWords>using</CodeKeyWords> Projects.Frontend;</>,
                 <><CodeKeyWords>using</CodeKeyWords> Projects.FullStack;</>,
-                <><CodeKeyWords>using</CodeKeyWords> Projects.Systems;</>,
                 <br/>,
                 <><CodeKeyWords>namespace</CodeKeyWords> MarinaDotNet;</>,
                 <br/>,
